@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>
+            Document
+        </title>
+        <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="https://code.jquery.com/jquery-3.3.1.min.js">
+        </script>
+        <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet">
+        </link>
+        <script src="app.js">
+        </script>
+        <style>
+            /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        width: 50%;
+        height: 100%;
+        float: left;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .form-group{
+        float: left;
+      }
+        </style>
+    </head>
+    <body>
+        <div class="col-md-6" id="map">
+        </div>
+        <div class="form-group">
+            <select class="form-control" id="select" name="">
+                <option>
+                    Seleccione una ubicación
+                </option>
+                <option value="scl">
+                    Santiago, Región Metropolitana
+                </option>
+                <option value="ccp">
+                    Concepción. Región del Bíobio
+                </option>
+            </select>
+            <img alt="" class="img-responsive" src="">
+            </img>
+        </div>
+        <div>
+            <h2 id="resumen">
+            </h2>
+        </div>
+        <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAji56K9ixl6HA_0tZ6GEZndoiRzj5BFN4&callback=initMap" type="text/javascript">
+        </script>
+    </body>
+</html>
